@@ -36,10 +36,10 @@ export default function Register() {
 
             alert(`Seu ID de Acesso: ${response.data.id}`);
             history.push('/');
-        } catch(err) {
-            alert (' Erro no cadastro, tente novamente.');
+        } catch (err) {
+            alert(' Erro no cadastro, tente novamente.');
         }
-        
+
     }
 
 
@@ -55,12 +55,12 @@ export default function Register() {
                     <Link className="back-link" to="/">
                         <FiArrowLeft className="icon" size={16} color="#E02041" />
                         Não tenho Cadastro
-                        </Link>
+                    </Link>
                 </section>
 
                 <form onSubmit={handleRegister}>
                     <input
-                        placeholder="Nome da ORG"
+                        placeholder="Digite seu Nome"
                         value={name}
                         onChange={e => setName(e.target.value)}
                     />
