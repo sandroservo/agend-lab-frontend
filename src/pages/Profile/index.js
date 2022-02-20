@@ -59,7 +59,7 @@ export default function Profile() {
                 </button>
             </header>
 
-            <h1>Aulas Cadatradas</h1>
+            <h1>Aulas Cadastradas</h1>
 
             <ul>
                 {aulas.map(aula => (
